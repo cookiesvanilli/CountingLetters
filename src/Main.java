@@ -16,10 +16,11 @@ public class Main {
 
         for (char symbol : line.toCharArray()) {
             if (Character.isLetter(symbol)) {
-                if (!amount.containsKey(symbol))
+                if (!amount.containsKey(symbol)) {
                     amount.put(symbol, 1);
-                else
+                } else {
                     amount.put(symbol, amount.get(symbol) + 1);
+                }
             }
         }
 
